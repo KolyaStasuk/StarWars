@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css\main.css" />
+    <title>Document</title>
+    
+</head>
+<header class="site-header sticky-top py-4 bg-dark container-xl">
+    <span align="right" class="counter" id="counterId"></span>
+    <nav class="container d-flex flex-column flex-md-row justify-content-center">
+    <script src="js\main.js"></script>
+    <div class="con">
+        <center><div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input onclick="GetPeople()" type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="">
+            <label class="btn btn-outline-primary people" for="btnradio1">Persons</label>
+            <input onclick="GetPlanet()" type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked="">
+            <label class="btn btn-outline-primary planets" for="btnradio2">Planet</label>
+            <input onclick="GetStarship()" type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked="">
+            <label class="btn btn-outline-primary starships" for="btnradio3">Starshit</label>
+            <span class="counter" id="counterId"></span>
+        </div></center>
+        
+    </div>
+</header>
+<body>
+
+<center>
+    <div id="loader" class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+</center>
+
+
+<table class="table container-xl mt-5 code" id="table">
+    <thead id="tableHead">
+    </thead>
+    <tbody id="tableBody">
+    </tbody>
+</table>
+
+<div class="main_body">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="root">
+                    <div class="body_slide" id="div1">
+                        <center>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button onclick="Prev()" type="button" class="btn btn-secondary" id="btnPrev">Prev</button>
+                                <button onclick="Next()" type="button" class="btn btn-secondary" id="btnNext">Next</button>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
